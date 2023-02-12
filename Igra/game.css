@@ -1,0 +1,590 @@
+/* background */
+body {
+  background-image: url("background/bg12.png");
+}
+
+#igra {
+  z-index: 20;
+  top: 50%;
+}
+
+#snimka {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 16;
+  display: block;
+}
+
+/* kraj na igrata */
+.gameover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  width: 800px;
+  height: 600px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 20;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* igralnoto pole */
+.canvas1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24),
+    0 40px 100px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* butonite */
+#buton {
+  top: 10%;
+  transition-duration: 0.2s;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24),
+    0 40px 100px 0 rgba(0, 0, 0, 0.19);
+  background-color: #e7e443;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  z-index: 20;
+}
+
+#buton:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+#button1 {
+  transition-duration: 0.2s;
+  border-radius: 12px;
+  border: none;
+  color: rgb(153, 34, 34);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#button2 {
+  transition-duration: 0.2s;
+  border-radius: 12px;
+  border: none;
+  color: rgb(153, 34, 34);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#button3 {
+  transition-duration: 0.2s;
+  border-radius: 12px;
+  border: none;
+  color: rgb(153, 34, 34);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#buttona {
+  transition-duration: 0.2s;
+  border-radius: 12px;
+  border: none;
+  color: rgb(153, 34, 34);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buton1 {
+  background-color: transparent;
+  margin: 0;
+  position: absolute;
+  top: 6.5%;
+  left: 36%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 16px;
+  z-index: 22;
+}
+
+.buton2 {
+  margin: 0;
+  position: absolute;
+  top: 6.5%;
+  left: 45.7%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  z-index: 22;
+}
+
+.buton3 {
+  margin: 0;
+  position: absolute;
+  top: 6.5%;
+  left: 55.4%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  z-index: 22;
+}
+
+.buton4 {
+  margin: 0;
+  position: absolute;
+  top: 6.5%;
+  left: 64.3%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  z-index: 22;
+}
+
+.buton1:hover {
+  cursor: pointer;
+}
+
+.buton2:hover {
+  cursor: pointer;
+}
+
+.buton3:hover {
+  cursor: pointer;
+}
+
+.buton4:hover {
+  cursor: pointer;
+}
+
+.guma {
+  position: absolute;
+  top: 6.5%;
+  left: 36%;
+  width: 120px;
+  height: 40px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 21;
+}
+.guma1 {
+  position: absolute;
+  top: 6.5%;
+  left: 45.7%;
+  width: 120px;
+  height: 40px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 21;
+}
+.guma2 {
+  position: absolute;
+  top: 6.5%;
+  left: 55.4%;
+  width: 120px;
+  height: 40px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 21;
+}
+.guma3 {
+  position: absolute;
+  top: 6.5%;
+  left: 64.3%;
+  width: 100px;
+  height: 40px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 21;
+}
+
+.start {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.n {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  height: 100px;
+  z-index: 21;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.tochki {
+  position: absolute;
+  top: 20.3%;
+  left: 28.9%;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  z-index: 11;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* 4-te opcii za otgovor */
+#age1 {
+  transition-duration: 0.2s;
+  border-radius: 12px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24),
+    0 40px 100px 0 rgba(0, 0, 0, 0.19);
+  background-color: #e74343;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 60%;
+  left: 42.5%;
+  z-index: 16;
+}
+#age2 {
+  transition-duration: 0.2s;
+  border-radius: 12px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24),
+    0 40px 100px 0 rgba(0, 0, 0, 0.19);
+  background-color: #e74343;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 60%;
+  left: 47.5%;
+  z-index: 16;
+}
+#age3 {
+  transition-duration: 0.2s;
+  border-radius: 12px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24),
+    0 40px 100px 0 rgba(0, 0, 0, 0.19);
+  background-color: #e74343;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 60%;
+  left: 52.5%;
+  z-index: 16;
+}
+
+#age4 {
+  transition-duration: 0.2s;
+  border-radius: 12px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24),
+    0 40px 100px 0 rgba(0, 0, 0, 0.19);
+  background-color: #e74343;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 60%;
+  left: 57.5%;
+  z-index: 16;
+}
+
+
+/* dropdown menuto */
+.dropbtn {
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 120px;
+  height: 100px;
+  z-index: 30;
+}
+
+.dropdown {
+  top: 15%;
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  position: absolute;
+  display: inline-block;
+  z-index: 30;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 30;
+  -ms-transform: translate(-50%, -100%);
+  transform: translate(-10%, 5%);
+}
+
+.dropdown-content button {
+  width: 160px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 30;
+}
+
+
+#drop1 {
+  border-image: url("images/borderButt2.png") 10 space;
+  border-left:0;
+  border-right:0;
+}
+
+#drop2 {
+  border-image: url("images/borderButt2.png") 10 space;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+}
+
+#drop3 {
+  border-image: url("images/borderButt2.png") 10 space;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+}
+
+#drop4 {
+  border-image: url("images/borderButt2.png") 10 space;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+}
+
+#drop5 {
+  border-image: url("images/borderButt2.png") 10 space;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+}
+
+#drop6 {
+  border-image: url("images/borderButt2.png") 10 space;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+}
+
+.dropdown-content button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#gif {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: none;
+  z-index: 20;
+  width: 800px;
+  height: 600px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#go {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  display: none;
+  z-index: 20;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+}
+
+/* putq */
+#put {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+#back {
+  display: none;
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* timera kolko vreme sme oceleli */
+#timer{
+  display: none;
+  background-color: #e74343;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 24px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+}
+
+/* zadachite i otgovorite */
+.zadacha {
+  display: none;
+  background-color: #e74343;
+  color: white;
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 16;
+  font-size: 30px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.zadacha10 {
+  background-color: #e74343;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.zadachka{
+  display: none;
+  background-color: #e74343;
+  color: white;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  z-index: 16;
+  font-size: 30px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#otgovori1, #otgovori2, #otgovori3, #otgovori4, #otgovori5,
+#otgovori6, #otgovori7, #otgovori8, #otgovori9, #otgovori10,
+#otgovori11, #otgovori12, #otgovori13, #otgovori14, #otgovori15,
+#otgovori16, #otgovori17, #otgovori18, #otgovori19, #otgovori20,
+#otgovori21, #otgovori22, #otgovori23, #otgovori24, #otgovori25,
+#otgovori26, #otgovori27, #otgovori28, #otgovori29, #otgovori30,
+#otgovori31, #otgovori32, #otgovori33, #otgovori34, #otgovori35,
+#otgovori36, #otgovori37, #otgovori38, #otgovori39, #otgovori40,
+#otgovori41, #otgovori42, #otgovori43, #otgovori44, #otgovori45,
+#otgovori46, #otgovori47, #otgovori48, #otgovori49, #otgovori50 {
+  display: none;
+}
